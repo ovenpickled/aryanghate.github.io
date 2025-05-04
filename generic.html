@@ -6,6 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        /* Custom styling for better readability and structure */
+        .skills-section {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5em;
+            margin-top: 1em;
+        }
+        
+        .skill-category {
+            margin-bottom: 1em;
+        }
+        
+        .skill-category h4 {
+            margin-bottom: 0.5em;
+            color: #6C63FF;
+        }
+        
+        .skill-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .skill-list li {
+            margin-bottom: 0.5em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .skill-list li::before {
+            content: "•";
+            color: #6C63FF;
+            font-weight: bold;
+            margin-right: 0.5em;
+        }
+        
+        .certification-item {
+            margin-bottom: 1.5em;
+        }
+        
+        .certification-item h4 {
+            margin-bottom: 0.25em;
+        }
+        
+        .certification-date {
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 0.25em;
+        }
+        
+        .certification-link {
+            font-size: 0.85em;
+            word-break: break-all;
+        }
+
+        /* Experience section enhancements */
+        .experience-item {
+            margin-bottom: 2em;
+            padding-bottom: 1em;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 0.5em;
+        }
+        
+        .experience-title {
+            margin: 0;
+            color: #6C63FF;
+        }
+        
+        .experience-period {
+            font-style: italic;
+            color: #888;
+        }
+        
+        .experience-company {
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+        
+        .experience-location {
+            font-size: 0.9em;
+            margin-bottom: 1em;
+        }
+    </style>
 </head>
 <body class="is-preload">
     <!-- Page Wrapper -->
@@ -37,26 +136,129 @@
         <section id="wrapper">
             <header>
                 <div class="inner">
-                    <h2>About</h2>
-                    <p>AI &amp; Machine Learning enthusiast and B.Tech student at RAIT, Thane, passionate about building AI-driven solutions.</p>
+                    <h2>About Me</h2>
+                    <p>AI &amp; Machine Learning enthusiast and B.Tech student at RAIT,<br>Passionate about building AI-driven solutions.</p>
                 </div>
             </header>
 
             <!-- Education & Experience -->
-            <section class="features">
-                <article>
-                    <h3 class="major">Education</h3>
-                    <p><strong>Ramrao Adik Institute of Technology</strong><br/>B.Tech in Artificial Intelligence and Machine Learning, Aug 2022 – May 2026, Navi Mumbai, Maharashtra<br/>Relevant Coursework: Artificial Intelligence, Machine Learning, Computer Vision, Pattern Recognition, Mechatronics, Data Structures, Statistical Modeling, Database Management.</p>
-                </article>
-                <article>
-                    <h3 class="major">Experience</h3>
-                    <p><strong>RediMinds, Inc</strong> &ndash; AI Marketing Enabler Intern, Jun 2024 – Sep 2024, Southfield, Michigan, USA<br/>
-                    • Enhanced customer engagement by 35% using AI-driven marketing strategies; led 50+ A/B tests for a 20% increase in CTR and 15% boost in conversions; integrated feedback systems to raise retention by 30%.<br/>
-                    • Analyzed competitive landscape, identifying 15 new AI integration opportunities, resulting in 25% market share growth. </p>
-                    <p><strong>Computer Society of India RAIT</strong> &ndash; Design Co‑Head, Aug 2023 – May 2024, Navi Mumbai, India<br/>
-                    • Mentored 5 junior designers through design workshops, driving a 50% improvement in productivity and creativity; created 30+ posters and social media posts, increasing event attendance by 40% and social media engagement by 25%.</p>
-                </article>
-            </section>
+            <div class="wrapper alt">
+                <div class="inner">
+                    <section id="education">
+                        <h3 class="major">Education</h3>
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h4 class="experience-title">B.Tech in Artificial Intelligence and Machine Learning</h4>
+                                <span class="experience-period">August 2022 – May 2026</span>
+                            </div>
+                            <div class="experience-company">Ramrao Adik Institute of Technology</div>
+                            <div class="experience-location">Navi Mumbai, Maharashtra</div>
+                            <div>
+                                <strong>Relevant Coursework:</strong> Artificial Intelligence, Machine Learning, Computer Vision, Pattern Recognition, Mechatronics, Data Structures, Statistical Modeling, Database Management.
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="experience">
+                        <h3 class="major">Experience</h3>
+                        
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h4 class="experience-title">AI Marketing Enabler Intern</h4>
+                                <span class="experience-period">June 2024 – September 2024</span>
+                            </div>
+                            <div class="experience-company">RediMinds, Inc</div>
+                            <div class="experience-location">Southfield, Michigan, USA</div>
+                            <ul>
+                                <li>Innovated a platform that enhanced customer engagement by 35% by leveraging AI-driven marketing strategies and analyzing user interactions.</li>
+                                <li>Created a platform that increased user satisfaction by 40% by helping users craft precise marketing strategies, identify ideal customers, and solve marketing and advertising issues.</li>
+                                <li>Analyzed competitive landscape, identifying 15 new opportunities for integrating AI into marketing strategies, leading to a 25% increase in market share.</li>
+                                <li>Led over 50 A/B tests to optimize AI-generated content, resulting in a 20% increase in click-through rates and a 15% boost in conversion rates in real-time marketing scenarios.</li>
+                                <li>Integrated customer feedback systems, enhancing AI marketing approaches and increasing customer retention by 30% over six months.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <h4 class="experience-title">Design Co-Head</h4>
+                                <span class="experience-period">August 2023 – May 2024</span>
+                            </div>
+                            <div class="experience-company">Computer Society of India RAIT</div>
+                            <div class="experience-location">Navi Mumbai, India</div>
+                            <ul>
+                                <li>Conducted several design workshops, mentoring a team of 5 junior designers, leading to a 50% improvement in team productivity and creativity.</li>
+                                <li>Designed over 30 posters and social media posts, increasing event attendance by 40% and social media engagement by 25%.</li>
+                                <li>Leveraged Figma, Canva, and Adobe Illustrator to create illustrations and marketing designs that increased project delivery speed by 20%.</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="skills" class="skills-section">
+                        <h3 class="major">Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Languages</h4>
+                                <ul class="skill-list">
+                                    <li>Python</li>
+                                    <li>Java</li>
+                                    <li>C/C++</li>
+                                    <li>HTML/CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>SQL</li>
+                                    <li>R</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Developer Tools</h4>
+                                <ul class="skill-list">
+                                    <li>Amazon Web Services (AWS)</li>
+                                    <li>VS Code</li>
+                                    <li>Google Developers Studio</li>
+                                    <li>Figma</li>
+                                    <li>Adobe Illustrator</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Technologies & Frameworks</h4>
+                                <ul class="skill-list">
+                                    <li>Langchain</li>
+                                    <li>TensorFlow</li>
+                                    <li>PyTorch</li>
+                                    <li>Scikit-Learn</li>
+                                    <li>Kubernetes</li>
+                                    <li>Apache Cassandra</li>
+                                    <li>GitHub</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="certifications">
+                        <h3 class="major">Certifications</h3>
+                        
+                        <div class="certification-item">
+                            <h4>CS50's Introduction to Artificial Intelligence with Python</h4>
+                            <div>Harvard</div>
+                            <div class="certification-date">January 2024</div>
+                            <!-- <div class="certification-link">[certificates.cs50.io/3655b99b...]</div> -->
+                        </div>
+                        
+                        <div class="certification-item">
+                            <h4>Deep Learning with TensorFlow</h4>
+                            <div>IBM</div>
+                            <div class="certification-date">November 2023</div>
+                            <!-- <div class="certification-link">[courses.edx.org/certificates/167eceaf9ad...]</div> -->
+                        </div>
+                        
+                        <div class="certification-item">
+                            <h4>Leadership and Communication</h4>
+                            <div>Harvard</div>
+                            <div class="certification-date">November 2023</div>
+                            <!-- <div class="certification-link">[credentials.edx.org/credentials/6f4e8365...]</div> -->
+                        </div>
+                    </section>
+                </div>
+            </div>
         </section>
 
         <!-- Footer -->
@@ -85,14 +287,14 @@
                 </form>
                 <ul class="contact">
                     <li class="icon solid fa-home">Thane, Maharashtra, India</li>
-                    <li class="icon solid fa-phone">+91 9136027780</li>
+                    <li class="icon solid fa-phone">+91 9136027780</li>
                     <li class="icon solid fa-envelope"><a href="mailto:aryanghate29@gmail.com">aryanghate29@gmail.com</a></li>
                     <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/awwwyan/">linkedin.com/in/awwwyan</a></li>
                     <li class="icon brands fa-github"><a href="https://github.com/ovenpickled">github.com/ovenpickled</a></li>
                 </ul>
                 <ul class="copyright">
                     <li>&copy; 2025 Aryan Ghate. All rights reserved.</li>
-                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    <!-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
                 </ul>
             </div>
         </section>

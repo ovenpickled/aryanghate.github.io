@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html>
 	<head>
 		<title>Aryan Ghate | AI &amp; Machine Learning Enthusiast</title>
@@ -25,140 +26,234 @@
 			.decor2 { width: 60px; height: 60px; background: #FFD166; bottom: 15%; right: 20%; }
 			.decor3 { width: 80px; height: 80px; background: #FF5E5B; top: 30%; right: 10%; }
 			@keyframes float { 0%,100% { transform: translateY(0);} 50% { transform: translateY(-25px);} }
-			/* Banner button styling override to ensure text is visible */
+			
+			/* Banner button styling fix - ensuring text is visible */
 			#banner .button.primary {
 				background: #fff !important;
 				color: #6C63FF !important;
-				display: inline-block;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
 				padding: 0.75em 1.5em;
 				border-radius: 2em;
 				margin-top: 1em;
 				font-weight: bold;
 				text-decoration: none;
 				font-size: 1rem;
+				line-height: normal;
 			}
-			.social { margin-top: 1.5em; list-style: none; display: flex; justify-content: center; gap: 1em; }
+			
+			#banner .button.primary:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+				background-color: #f0f0f0 !important;
+			}
+			
+			.social { 
+				margin-top: 1.5em; 
+				list-style: none; 
+				display: flex; 
+				justify-content: center; 
+				gap: 1em; 
+				padding-left: 0;
+			}
+			
+			.social li a {
+				color: #ffffff;
+				font-size: 1.5em;
+				transition: color 0.3s ease;
+			}
+			
+			.social li a:hover {
+				color: #FFD166;
+			}
+			
+			/* Fix for bottom section layout */
+			#four .actions {
+				margin-top: 2em;
+				text-align: center;
+				clear: both;
+				display: block;
+				width: 100%;
+			}
+			
+			#four .button {
+				display: inline-block;
+				margin: 0 auto;
+				padding: 0.75em 2em;
+			}
+
+			#wrapper .actions .button {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+			}
+
 		</style>
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
-		<header id="header" class="alt">
-			<h1><a href="index.html">Aryan Ghate</a></h1>
-			<nav><a href="#menu">Menu</a></nav>
-		</header>
+		<!-- Page Wrapper -->
+		<div id="page-wrapper">
 
-		<!-- Menu -->
-		<nav id="menu">
-			<div class="inner">
-				<h2>Menu</h2>
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">About</a></li>
-					<li><a href="elements.html">Projects</a></li>
-					<li><a href="generic.html#footer">Contact</a></li>
-				</ul>
-				<a href="#" class="close">Close</a>
-			</div>
-		</nav>
+			<!-- Header -->
+			<header id="header" class="alt">
+				<h1><a href="index.html">Aryan Ghate</a></h1>
+				<nav><a href="#menu">Menu</a></nav>
+			</header>
 
-		<!-- Banner -->
-		<section id="banner">
-			<div class="inner">
-				<div class="logo"><span class="icon fa-gem"></span></div>
-				<h2>Aryan Ghate</h2>
-				<p>AI &amp; Machine Learning Enthusiast</p>
-				<a href="elements.html" class="button primary">View Projects</a>
-				<ul class="social">
-					<li><a href="https://github.com/ovenpickled" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="https://www.linkedin.com/in/awwwyan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="mailto:aryanghate29@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-				</ul>
-			</div>
-			<div class="decor decor1"></div>
-			<div class="decor decor2"></div>
-			<div class="decor decor3"></div>
-		</section>
-
-		<!-- Wrapper -->
-		<section id="wrapper">
-
-			<!-- One: Professional Summary -->
-			<section id="one" class="wrapper spotlight style1">
+			<!-- Menu -->
+			<nav id="menu">
 				<div class="inner">
-					<a href="generic.html" class="image"><img src="images/summary.jpg" alt="Professional Summary" /></a>
-					<div class="content">
-						<h2 class="major">Professional Summary</h2>
-						<p>AI &amp; Machine Learning enthusiast with hands-on experience in developing and deploying scalable AI-driven solutions. Proven ability to drive engagement and optimize processes through data-driven insights and robust engineering practices.</p>
-						<a href="generic.html" class="special">Learn more</a>
-					</div>
+					<h2>Menu</h2>
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html">About</a></li>
+						<li><a href="elements.html">Projects</a></li>
+						<li><a href="generic.html#footer">Contact</a></li>
+					</ul>
+					<a href="#" class="close">Close</a>
 				</div>
+			</nav>
+
+			<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<div class="logo"><span class="icon fa-gem"></span></div>
+					<h2>Aryan Ghate</h2>
+					<p>AI &amp; Machine Learning Enthusiast</p>
+					<a href="elements.html" class="button primary">View Projects</a>
+					<ul class="social">
+						<li><a href="https://github.com/ovenpickled" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/awwwyan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:aryanghate29@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="decor decor1"></div>
+				<div class="decor decor2"></div>
+				<div class="decor decor3"></div>
 			</section>
 
-			<!-- Two: Tech Expertise -->
-			<section id="two" class="wrapper alt spotlight style2">
-				<div class="inner">
-					<a href="generic.html#skills" class="image"><img src="images/tech.jpg" alt="Tech Expertise" /></a>
-					<div class="content">
-						<h2 class="major">Tech Expertise</h2>
-						<p>Proficient in Python, Java, C/C++, TensorFlow, PyTorch, Flask, Streamlit, AWS, Docker, Kubernetes, MongoDB, SQL, and Git. Passionate about leveraging cutting-edge tools to build efficient and scalable applications.</p>
-						<a href="generic.html#skills" class="special">View Skills</a>
+			<!-- Wrapper -->
+			<section id="wrapper">
+
+				<!-- One: Professional Summary -->
+				<section id="one" class="wrapper spotlight style1">
+					<div class="inner">
+						<a href="generic.html" class="image"><img src="images/summary.jpg" alt="Professional Summary" /></a>
+						<div class="content">
+							<h2 class="major">Professional Summary</h2>
+							<p>AI &amp; Machine Learning enthusiast with hands-on experience in developing and deploying scalable AI-driven solutions. Proven ability to drive engagement and optimize processes through data-driven insights and robust engineering practices.</p>
+							<a href="generic.html" class="special">Learn more</a>
+						</div>
 					</div>
-				</div>
+				</section>
+
+				<!-- Two: Tech Expertise -->
+				<section id="two" class="wrapper alt spotlight style2">
+					<div class="inner">
+						<a href="generic.html#skills" class="image"><img src="images/tech.jpg" alt="Tech Expertise" /></a>
+						<div class="content">
+							<h2 class="major">Tech Expertise</h2>
+							<p>Proficient in Python, Java, C/C++, TensorFlow, PyTorch, Flask, Streamlit, AWS, Docker, Kubernetes, MongoDB, SQL, and Git. Passionate about leveraging cutting-edge tools to build efficient and scalable applications.</p>
+							<a href="generic.html#skills" class="special">View Skills</a>
+						</div>
+					</div>
+				</section>
+
+				<!-- Three: Key Achievements -->
+				<section id="three" class="wrapper spotlight style3">
+					<div class="inner">
+						<a href="generic.html#experience" class="image"><img src="images/achievements.jpg" alt="Key Achievements" /></a>
+						<div class="content">
+							<h2 class="major">Key Achievements</h2>
+							<p>Increased customer engagement by 35% at RediMinds, delivered a 95% accurate visa prediction model, and scaled Nutrabling to support over 1,000 daily users with 99.9% uptime. Recognized as Design Co‑Head driving a 40% boost in event participation.</p>
+							<a href="generic.html#experience" class="special">Explore Achievements</a>
+						</div>
+					</div>
+				</section>
+
+				<!-- Four: Core Competencies -->
+				<section id="four" class="wrapper alt style1">
+					<div class="inner">
+						<h2 class="major">Core Competencies</h2>
+						<section class="features">
+							<article>
+								<a href="elements.html" class="image"><img width="480" height="320" src="https://img.icons8.com/cotton/512/brain-3.png" alt="brain-3"/></a>
+								<h3 class="major">Machine Learning</h3>
+								<p>Model development, evaluation, and deployment in real-world applications.</p>
+								<a href="elements.html#ml-projects" class="special">View Projects</a>
+							</article>
+							<article>
+								<a href="elements.html" class="image"><img width="480" height="320" src="https://img.icons8.com/cotton/512/laptop-coding.png" alt="laptop-coding"/></a>
+								<h3 class="major">Web Development</h3>
+								<p>Building responsive interfaces using Flask, Streamlit, HTML/CSS/JS, and React.</p>
+								<a href="elements.html" class="special">View Projects</a>
+							</article>
+							<article>
+								<a href="elements.html" class="image"><img width="480" height="320" src="https://img.icons8.com/clouds/512/science-book.png" alt="science-book"/></a>
+								<h3 class="major">Data Science</h3>
+								<p>Data analysis, visualization, and statistical modeling using Python, Pandas, and SQL.</p>
+								<a href="elements.html" class="special">View Projects</a>
+							</article>
+							<article>
+								<a href="elements.html" class="image"><img width="480" height="320" src="https://img.icons8.com/cotton/512/upload-to-cloud--v1.png" alt="upload-to-cloud--v1"/></a>
+								<h3 class="major">Cloud & DevOps</h3>
+								<p>Deployment and orchestration with AWS, Docker, Kubernetes, and CI/CD pipelines.</p>
+								<a href="elements.html" class="special">View Projects</a>
+							</article>
+						</section>
+						<div class="actions">
+							<a href="elements.html" class="button primary">Browse All Projects</a>
+						</div>
+					</div>
+				</section>
+
 			</section>
 
-			<!-- Three: Key Achievements -->
-			<section id="three" class="wrapper spotlight style3">
+			<!-- Footer -->
+			<section id="footer">
 				<div class="inner">
-					<a href="generic.html#experience" class="image"><img src="images/achievements.jpg" alt="Key Achievements" /></a>
-					<div class="content">
-						<h2 class="major">Key Achievements</h2>
-						<p>Increased customer engagement by 35% at RediMinds, delivered a 95% accurate visa prediction model, and scaled Nutrabling to support over 1,000 daily users with 99.9% uptime. Recognized as Design Co‑Head driving a 40% boost in event participation.</p>
-						<a href="generic.html#experience" class="special">Explore Achievements</a>
-					</div>
-				</div>
-			</section>
-
-			<!-- Four: Core Competencies -->
-			<section id="four" class="wrapper alt style1">
-				<div class="inner">
-					<h2 class="major">Core Competencies</h2>
-					<section class="features">
-						<article>
-							<a href="elements.html" class="image"><img src="images/ml.jpg" alt="Machine Learning" /></a>
-							<h3 class="major">Machine Learning</h3>
-							<p>Model development, evaluation, and deployment in real-world applications.</p>
-							<a href="elements.html#ml-projects" class="special">View Projects</a>
-						</article>
-						<article>
-							<a href="elements.html" class="image"><img src="images/web.jpg" alt="Web Development" /></a>
-							<h3 class="major">Web Development</h3>
-							<p>Building responsive interfaces using Flask, Streamlit, HTML/CSS/JS, and React.</p>
-							<a href="elements.html" class="special">View Projects</a>
-						</article>
-						<article>
-							<a href="elements.html" class="image"><img src="images/data.jpg" alt="Data Science" /></a>
-							<h3 class="major">Data Science</h3>
-							<p>Data analysis, visualization, and statistical modeling using Python, Pandas, and SQL.</p>
-							<a href="elements.html" class="special">View Projects</a>
-						</article>
-						<article>
-							<a href="elements.html" class="image"><img src="images/cloud.jpg" alt="Cloud & DevOps" /></a>
-							<h3 class="major">Cloud & DevOps</h3>
-							<p>Deployment and orchestration with AWS, Docker, Kubernetes, and CI/CD pipelines.</p>
-							<a href="elements.html" class="special">View Projects</a>
-						</article>
-					</section>
-					<ul class="actions">
-						<li><a href="elements.html" class="button">Browse All Projects</a></li>
+					<h2 class="major">Get in touch</h2>
+					<p>Feel free to reach out for collaborations or opportunities.</p>
+					<!-- <form method="post" action="mailto:aryanghate29@gmail.com" enctype="text/plain">
+						<div class="fields">
+							<div class="field">
+								<label for="name">Name</label>
+								<input type="text" name="name" id="name" />
+							</div>
+							<div class="field">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" />
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="4"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" /></li>
+						</ul>
+					</form> -->
+					<ul class="contact">
+						<li class="icon solid fa-home">Thane, Maharashtra, India</li>
+						<li class="icon solid fa-phone">+91 9136027780</li>
+						<li class="icon solid fa-envelope"><a href="mailto:aryanghate29@gmail.com">aryanghate29@gmail.com</a></li>
+						<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/awwwyan/">LinkedIn</a></li>
+						<li class="icon brands fa-github"><a href="https://github.com/ovenpickled">GitHub</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; 2025 Aryan Ghate. All rights reserved.</li>
+						<!-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
 					</ul>
 				</div>
 			</section>
 
-		</section>
+		</div>
 
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
 		<script src="assets/js/browser.min.js"></script>
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
